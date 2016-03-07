@@ -1,0 +1,9 @@
+{
+  "path": "../asset/",
+  "manifest": [
+    {"id": "asset.json", "src": "asset.json"},
+    {"id": "scenario.json", "src": "scenario.json"},
+    {"id": "config.json", "src": "config.json"},
+    {"id": "customTitle.js", "src": "customTitle.js"}
+  ]
+}
