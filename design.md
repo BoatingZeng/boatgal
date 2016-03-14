@@ -22,7 +22,7 @@
 
 游戏数据由`asset`、`scenario`、`config`三个对象描述。
 这三个对象在服务器有独立的`json`文件储存。
-1. `asset`指代整个游戏资源,具体格式参见createjs的preloadjs的manifest。
+1. `asset`指代整个游戏资源,具体格式参见`createjs`的`preloadjs`的`manifest`。
 2. `scenario`指剧本，具体见剧本细节。
 3. `config`记录一些设定。
 
@@ -34,8 +34,9 @@
       {
         "bg": "",
         "bgm": "",
-        "figures": [{"id": "", "position": {"x": 0, "y": 0}, "effect": {}}],
-        "dialog": {"speaker": "", "speech": "", "effect": {}}
+        "figures": [{"id": "", "position": {"x": 0, "y": 0}}],
+        "dialog": {"speaker": "", "speech": ""},
+        "effect": {}
       }
     ]
   }
@@ -63,7 +64,6 @@
    {
      id {String}: 图片id
      position {Object}: 表示图片位置。包含x {Num}, y {Num}属性。
-     effect {Object}: 描述关于该figure的效果。主要是进出场时的效果。
    }
 ```
 
@@ -72,9 +72,10 @@
    {
      speaker {String}: 说话人名称
      speech {String}: 所说的话
-     effect {Object}: 描述该对话期间的效果。比如说到某个词时有效果音,或者说到某个词时人物图片有动作(表情改变、晃动)。
    }
 ```
+
+5. `effect {Object}`: 描述效果,代表这整个`change`要展示的效果
 
 ###效果器(effect object)
 该object的属性名是各种效果的名称。

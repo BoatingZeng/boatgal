@@ -4,10 +4,11 @@
       "bg": "",
       "bgm": "",
       "figures": [
-        {"id": "", "position": {"x": 0, "y": 0}, "effect": {}},
-        {"id": "", "position": {"x": 0, "y": 0}, "effect": {}}
+        {"id": "", "position": {"x": 0, "y": 0}},
+        {"id": "", "position": {"x": 0, "y": 0}}
       ],
-      "dialog": {"speaker": "", "speech": "", "effect": {}}
+      "dialog": {"speaker": "", "speech": ""},
+      "effect": {}
     }
   ]
 }
