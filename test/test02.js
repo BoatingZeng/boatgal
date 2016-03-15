@@ -1,0 +1,1 @@
+var stage = new createjs.Stage("testC");
