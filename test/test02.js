@@ -1,1 +1,1 @@
-var stage = new createjs.Stage("testC");
+galRenderer.init(boatgal.stage);

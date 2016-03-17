@@ -17,4 +17,4 @@ The `createjs` created by gskinner.
 负责显示标题画面。defautl就是`boatgal`默认的,custom就是游戏定制的。
 
 #beginScenario.js
-进行剧本主体的处理,控制流程,注册事件,调用`renderer`来进行渲染。
+进行剧本主体的处理,控制流程,注册事件,调用`galRenderer.render`来进行渲染。

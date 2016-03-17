@@ -1,7 +1,11 @@
 {
+  "dialogText": {
+    "font": "20px Arial",
+    "color": "#ff7700"
+  },
   "save": {
     "numPart": "",
     "numChange": 0,
-    "renderObj": {}
+    "renderObjFull": {}
   }
 }
