@@ -1,14 +1,20 @@
 {
   "part0": [
     {
-      "bg": "",
+      "bg": "bg.png",
       "bgm": "",
       "figures": [
-        {"id": "", "position": {"x": 0, "y": 0}},
-        {"id": "", "position": {"x": 0, "y": 0}}
+        {"id": "ikazuti.png", "position": {"x": 0, "y": 0}},
+        {"id": "inaduma.png", "position": {"x": 300, "y": 0}}
       ],
-      "dialog": {"speaker": "", "speech": ""},
+      "dialog": {"speaker": "雷和电", "speech": "大家好，我们是雷和电。"},
       "effect": {}
+    },
+    {
+      "figures": [
+        {"id": "ikazuti.png", "position": {"x": 100, "y": 0}}
+      ],
+      "dialog": {"speaker": "雷", "speech": "电酱跑掉了。"}
     }
   ]
 }

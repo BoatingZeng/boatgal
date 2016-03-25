@@ -4,4 +4,5 @@
  */
  boatgal.customTitle = function() {
   console.log('this is customTitle');
+  boatgal.beginScenario();
  };

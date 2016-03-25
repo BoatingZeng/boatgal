@@ -49,13 +49,14 @@
    }
 ```
 
-2. `change {Object}`: `part`的元素,表示舞台的变化,添加或者切换某一类舞台元素(指背景、音效、人物、台词等),则把要添加或者切换后的舞台元素写在`change`中;要去除,则写`"off"`。变化以`change`的直接子元素为基础,即,`figures`这类本身是`Array`或`Object`的元素,一旦改变,就是改变整个`Array`和`Object`。`change`中改变最频繁的是`dialog`元素。
+2. `change {Object}`: `part`的元素,表示舞台的变化,添加或者切换某一类舞台元素(指背景、音效、人物、台词等),则把要添加或者切换后的舞台元素写在`change`中;要去除,则写`"off"`,`figures`则用空数组表示去除。变化以`change`的直接子元素为基础,即,`figures`这类本身是`Array`或`Object`的元素,一旦改变,就是改变整个`Array`和`Object`。`change`中改变最频繁的是`dialog`元素。
 ```
    {
      bg {String}: 背景图片的id,背景图片的位置会设定为(0,0)
      bgm {String}: 背景音乐的id
      figures {Array}: figure对象的集合
      dialog {Object}: 
+     effect {Object}:
    }
 ```
 

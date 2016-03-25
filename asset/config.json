@@ -1,7 +1,9 @@
 {
+  "width": 800,
+  "height": 480,
   "dialogText": {
     "font": "20px Arial",
-    "color": "#ff7700"
+    "color": "#fff"
   },
   "save": {
     "numPart": "",

@@ -4,6 +4,9 @@
     {"id": "asset.json", "src": "asset.json"},
     {"id": "scenario.json", "src": "scenario.json"},
     {"id": "config.json", "src": "config.json"},
-    {"id": "customTitle.js", "src": "customTitle.js"}
+    {"id": "customTitle.js", "src": "customTitle.js"},
+    {"id": "bg.png", "src": "bg.png"},
+    {"id": "ikazuti.png", "src": "ikazuti.png"},
+    {"id": "inaduma.png", "src": "inaduma.png"}
   ]
 }
