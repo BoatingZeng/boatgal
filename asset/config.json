@@ -6,8 +6,21 @@
     "color": "#fff"
   },
   "save": {
-    "numPart": "",
+    "numPart": "part0",
     "numChange": 0,
-    "renderObjFull": {}
+    "renderObjFull": {
+      "bg": "bg.png",
+      "bgm": "",
+      "figures": [
+        {"id": "ikazuti.png", "position": {"x": 100, "y": 0}}
+      ],
+      "dialog": {"speaker": "雷", "speech": "电酱跑掉了。"},
+      "effect": {
+        "branch": [
+          {"text": "选择1", "targetPart": "part0"},
+          {"text": "选择2", "targetPart": "part0"}
+        ]
+      }
+    }
   }
 }
