@@ -36,7 +36,7 @@
         "bgm": "",
         "figures": [{"id": "", "position": {"x": 0, "y": 0}}],
         "dialog": {"speaker": "", "speech": ""},
-        "effect": {}
+        "effect": []
       }
     ]
   }
@@ -56,7 +56,7 @@
      bgm {String}: 背景音乐的id
      figures {Array}: figure对象的集合
      dialog {Object}: 
-     effect {Object}:
+     effect {Array}:
    }
 ```
 
@@ -76,21 +76,7 @@
    }
 ```
 
-5. `effect {Object}`: 描述效果,代表这整个`change`要展示的效果
-
-###效果器(effect object)
-该object的属性名是各种效果的名称。
-
-####分支效果器
-1. `branch {Array}`: 描述分支选项，只在`part`的最后一个`change`有该效果。是`choice`的集合。
-
-2. `choice {Object}`: 包含要显示的文字和要跳转至的part。
-```
-   {
-    text {String}: 在出现分支选项时，选项上显示的文字。
-    targetPart {String}: 要跳转至的目标part。
-   }
-```
+5. `effect {Array}`: 描述效果,代表这整个`change`要展示的效果
 
 #工作流程
 

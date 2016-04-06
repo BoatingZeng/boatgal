@@ -33,12 +33,17 @@
         {"id": "ikazuti.png", "position": {"x": 100, "y": 0}}
       ],
       "dialog": {"speaker": "雷", "speech": "我在这里呢。背景也换了。你也过来呀。"},
-      "effect": {
-        "branch": [
-          {"text": "过来", "targetPart": "part1"},
-          {"text": "不过", "targetPart": "part2"}
+      "effect": [
+          {"name": "branch", 
+           "wait": 2000, 
+           "attribute": {
+            "choices" : [
+              {"text": "过去", "targetPart": "part1"},
+              {"text": "不过", "targetPart": "part2"}
+            ]
+           }
+          }
         ]
-      }
     }
   ],
   "part1": [
@@ -48,11 +53,16 @@
           {"id": "inaduma.png", "position": {"x": 300, "y": 0}}
         ],
         "dialog": {"speaker": "电", "speech": "我过来了。"},
-        "effect": {
-          "branch": [
-            {"text": "重新开始", "targetPart": "part0"}
+        "effect": [
+          {"name": "branch", 
+           "wait": 2000, 
+           "attribute": {
+            "choices" : [
+              {"text": "重新开始", "targetPart": "part0"}
+            ]
+           }
+          }
         ]
-      }
     }
   ],
   "part2": [
@@ -69,11 +79,16 @@
           {"id": "inaduma.png", "position": {"x": 300, "y": 0}}
         ],
         "dialog": {"speaker": "雷", "speech": "好吧，我回来了。"},
-        "effect": {
-          "branch": [
-            {"text": "重新开始", "targetPart": "part0"}
-          ]
-        }
+        "effect": [
+          {"name": "branch", 
+           "wait": 2000, 
+           "attribute": {
+            "choices" : [
+              {"text": "重新开始", "targetPart": "part0"}
+            ]
+           }
+          }
+        ]
     }
   ]
 }

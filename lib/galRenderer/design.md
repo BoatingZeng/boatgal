@@ -1,24 +1,28 @@
 #效果
-关于效果和效果器的设计。效果描述指在剧本文件中的描述方法。效果器指具体的实现方法。效果在剧本中命名为`effect`。效果描述即为`effect`对象的属性。效果器函数储存在`galRenderer.effect`中。
+一个`change`开始时,记作0时刻,每一个效果都有一个起始的时刻,这样就控制了效果的顺序。效果发生的时刻叫做`wait`,
 
-处理效果的过程：
-
-1. 按`effect`中的属性的顺序处理效果。
-2. 按效果名调用效果器函数,即效果器函数名和效果名相同。
-3. 把效果描述对象作为参数调用效果器函数。
-
-##分支效果
-用于在一个`part`结束时处理分支。
-
-###效果描述
-1. `branch {Array}`: 描述分支选项，只在`part`的最后一个`change`有该效果。是`choice`的集合。
-
-2. `choice {Object}`: 包含要显示的文字和要跳转至的part。
+剧本中,`effect`属性是一个数组,数组元素形式如下:
 ```
-   {
-    text {String}: 在出现分支选项时，选项上显示的文字。
-    targetPart {String}: 要跳转至的目标part。
-   }
+{
+  name {String}: 效果的名字
+  wait {Number}: 效果发生的时刻
+  attribute {Object}: 对效果的描述,会作为效果器函数的参数
+}
 ```
 
-###效果器
+##各种效果的attribute
+下面是每种效果的`attribute`的描述。效果名称下面的`Object`就是`attribute`。
+
+###branch
+```
+{
+  choices {Array}: 选择的集合
+}
+```
+
+`choices`的元素:
+```
+{
+  text {String}: 要显示的字符串
+  targetPart {String}: 要跳转至的part
+}
