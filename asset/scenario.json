@@ -7,10 +7,10 @@
         {"id": "ikazuti.png", "position": {"x": 0, "y": 0}},
         {"id": "inaduma.png", "position": {"x": 300, "y": 0}}
       ],
-      "dialog": {"speaker": "雷和电", "speech": "大家好，我们是雷和电。\n欢迎来到boatgal demo。"}
+      "dialog": {"speaker": "雷和电", "speech": "大家好。这是boatgal demo。"}
     },
     {
-      "dialog": {"speaker": "电", "speech": "为什么只有我们两个？"}
+      "dialog": {"speaker": "电", "speech": "只有我们两个？"}
     },
     {
       "dialog": {"speaker": "雷", "speech": "都说了是demo啦。\n看，对话框样式什么的都还没弄好。\n因为Boating太懒了。"}
@@ -33,17 +33,10 @@
         {"id": "ikazuti.png", "position": {"x": 100, "y": 0}}
       ],
       "dialog": {"speaker": "雷", "speech": "我在这里呢。背景也换了。你也过来呀。"},
-      "effect": [
-          {"name": "branch", 
-           "wait": 2000, 
-           "attribute": {
-            "choices" : [
-              {"text": "过去", "targetPart": "part1"},
-              {"text": "不过", "targetPart": "part2"}
-            ]
-           }
-          }
-        ]
+      "branch": [
+        {"text": "过去", "targetPart": "part1"},
+        {"text": "不过", "targetPart": "part2"}
+      ]
     }
   ],
   "part1": [
@@ -53,15 +46,8 @@
           {"id": "inaduma.png", "position": {"x": 300, "y": 0}}
         ],
         "dialog": {"speaker": "电", "speech": "我过来了。"},
-        "effect": [
-          {"name": "branch", 
-           "wait": 2000, 
-           "attribute": {
-            "choices" : [
-              {"text": "重新开始", "targetPart": "part0"}
-            ]
-           }
-          }
+        "branch": [
+          {"text": "重新开始", "targetPart": "part0"}
         ]
     }
   ],
@@ -79,15 +65,8 @@
           {"id": "inaduma.png", "position": {"x": 300, "y": 0}}
         ],
         "dialog": {"speaker": "雷", "speech": "好吧，我回来了。"},
-        "effect": [
-          {"name": "branch", 
-           "wait": 2000, 
-           "attribute": {
-            "choices" : [
-              {"text": "重新开始", "targetPart": "part0"}
-            ]
-           }
-          }
+        "branch": [
+          {"text": "重新开始", "targetPart": "part0"}
         ]
     }
   ]

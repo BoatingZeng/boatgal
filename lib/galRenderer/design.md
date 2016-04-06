@@ -11,18 +11,5 @@
 ```
 
 ##各种效果的attribute
-下面是每种效果的`attribute`的描述。效果名称下面的`Object`就是`attribute`。
+下面是每种效果的`attribute`的描述。
 
-###branch
-```
-{
-  choices {Array}: 选择的集合
-}
-```
-
-`choices`的元素:
-```
-{
-  text {String}: 要显示的字符串
-  targetPart {String}: 要跳转至的part
-}
