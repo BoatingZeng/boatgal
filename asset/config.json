@@ -1,8 +1,16 @@
 {
   "width": 800,
   "height": 480,
+  "speakerText": {
+    "font": "bold 20px 微软雅黑",
+    "color": "#fff"
+    },
   "dialogText": {
-    "font": "20px Arial",
+    "font": "20px 微软雅黑",
+    "color": "#fff"
+  },
+  "otherText": {
+    "font": "20px 微软雅黑",
     "color": "#fff"
   },
   "save": {

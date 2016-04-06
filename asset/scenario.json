@@ -1,25 +1,79 @@
 {
   "part0": [
     {
-      "bg": "bg.png",
+      "bg": "bg01.jpg",
       "bgm": "",
       "figures": [
         {"id": "ikazuti.png", "position": {"x": 0, "y": 0}},
         {"id": "inaduma.png", "position": {"x": 300, "y": 0}}
       ],
-      "dialog": {"speaker": "雷和电", "speech": "大家好，我们是雷和电。"}
+      "dialog": {"speaker": "雷和电", "speech": "大家好，我们是雷和电。\n欢迎来到boatgal demo。"}
+    },
+    {
+      "dialog": {"speaker": "电", "speech": "为什么只有我们两个？"}
+    },
+    {
+      "dialog": {"speaker": "雷", "speech": "都说了是demo啦。\n看，对话框样式什么的都还没弄好。\n因为Boating太懒了。"}
+    },
+    {
+      "dialog": {"speaker": "电", "speech": "原来是这样啊。那我们做些什么好？"}
+    },
+    {
+      "dialog": {"speaker": "雷", "speech": "先测试立绘的处理功能吧。"}
     },
     {
       "figures": [
+        {"id": "inaduma.png", "position": {"x": 300, "y": 0}}
+      ],
+      "dialog": {"speaker": "电", "speech": "呀呀呀呀！雷酱你去哪里了？"}
+    },
+    {
+      "bg": "bg02.jpg",
+      "figures": [
         {"id": "ikazuti.png", "position": {"x": 100, "y": 0}}
       ],
-      "dialog": {"speaker": "雷", "speech": "电酱跑掉了。"},
+      "dialog": {"speaker": "雷", "speech": "我在这里呢。背景也换了。你也过来呀。"},
       "effect": {
         "branch": [
-          {"text": "选择1", "targetPart": "part0"},
-          {"text": "选择2", "targetPart": "part0"}
+          {"text": "过来", "targetPart": "part1"},
+          {"text": "不过", "targetPart": "part2"}
         ]
       }
+    }
+  ],
+  "part1": [
+    {
+      "figures": [
+          {"id": "ikazuti.png", "position": {"x": 100, "y": 0}},
+          {"id": "inaduma.png", "position": {"x": 300, "y": 0}}
+        ],
+        "dialog": {"speaker": "电", "speech": "我过来了。"},
+        "effect": {
+          "branch": [
+            {"text": "重新开始", "targetPart": "part0"}
+        ]
+      }
+    }
+  ],
+  "part2": [
+    { 
+      "bg": "bg01.jpg",
+      "figures": [
+          {"id": "inaduma.png", "position": {"x": 300, "y": 0}}
+        ],
+        "dialog": {"speaker": "电", "speech": "你还是回来吧，我有点方。"}
+    },
+    {
+      "figures": [
+          {"id": "ikazuti.png", "position": {"x": 100, "y": 0}},
+          {"id": "inaduma.png", "position": {"x": 300, "y": 0}}
+        ],
+        "dialog": {"speaker": "雷", "speech": "好吧，我回来了。"},
+        "effect": {
+          "branch": [
+            {"text": "重新开始", "targetPart": "part0"}
+          ]
+        }
     }
   ]
 }
