@@ -66,6 +66,7 @@
    {
      id {String}: 图片id
      position {Object}: 表示图片位置。包含x {Num}, y {Num}属性。
+     isHide {Boolean}: 可选属性,如果true,则初始时该图片alpha设置为0
    }
 ```
 

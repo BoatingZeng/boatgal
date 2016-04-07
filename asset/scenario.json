@@ -30,9 +30,12 @@
     {
       "bg": "bg02.jpg",
       "figures": [
-        {"id": "ikazuti.png", "position": {"x": 100, "y": 0}}
+        {"id": "ikazuti.png", "position": {"x": 100, "y": 0}, "isHide": true}
       ],
       "dialog": {"speaker": "雷", "speech": "我在这里呢。背景也换了。你也过来呀。"},
+      "effect": [
+        {"name": "fade", "wait": 1000, "attribute": {"isFadein": true, "duration": 2000, "target": "ikazuti.png"}}
+      ],
       "branch": [
         {"text": "过去", "targetPart": "part1"},
         {"text": "不过", "targetPart": "part2"}
