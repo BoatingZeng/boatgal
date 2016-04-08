@@ -20,16 +20,22 @@ boatgal.config = {
 
 boatgal.status = {};
 
+//测试用的效果描述Obj
+var fadeTest1 = {name: 'fade', wait: 200, attribute: {isFadein: true, duration: 1000, target: 'ikazuti.png'}};
+var fadeTest2 = {name: 'fade', wait: 200, attribute: {isFadein: false, duration: 1000, target: 'inaduma.png'}};
+
 boatgal.status.renderObjFull = {
   bg: 'bg01.jpg',
   figures: [
-    {id: 'ikazuti.png', position:{x: 0, y: 0}},
+    {id: 'ikazuti.png', position:{x: 0, y: 0}, isHide: true},
     {id: 'inaduma.png', position:{x: 300, y: 0}}
   ],
   dialog: {speaker: 'speaker', speech: 'Testing 正在测试'},
   effect: [
-    {name: 'fade'}
+    fadeTest1, fadeTest2
   ]
 };
 
-boatgal.status.isWaiting = false;
+boatgal.status.isTypeEnd = false;
+boatgal.status.isEffectEnd = false;
+

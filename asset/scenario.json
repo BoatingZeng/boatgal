@@ -1,25 +1,13 @@
 {
   "part0": [
     {
-      "bg": "bg01.jpg",
+      "bg": {"id": "bg01.jpg", "isEffect": false},
       "bgm": "",
       "figures": [
         {"id": "ikazuti.png", "position": {"x": 0, "y": 0}},
         {"id": "inaduma.png", "position": {"x": 300, "y": 0}}
       ],
-      "dialog": {"speaker": "雷和电", "speech": "大家好。这是boatgal demo。"}
-    },
-    {
-      "dialog": {"speaker": "电", "speech": "只有我们两个？"}
-    },
-    {
-      "dialog": {"speaker": "雷", "speech": "都说了是demo啦。\n看，对话框样式什么的都还没弄好。\n因为Boating太懒了。"}
-    },
-    {
-      "dialog": {"speaker": "电", "speech": "原来是这样啊。那我们做些什么好？"}
-    },
-    {
-      "dialog": {"speaker": "雷", "speech": "先测试立绘的处理功能吧。"}
+      "dialog": {"speaker": "雷和电", "speech": "大家好。这是boatgal demo。\n第二行。\n第三行。"}
     },
     {
       "figures": [
@@ -28,13 +16,14 @@
       "dialog": {"speaker": "电", "speech": "呀呀呀呀！雷酱你去哪里了？"}
     },
     {
-      "bg": "bg02.jpg",
+      "bg": {"id": "bg02.jpg", "isEffect": true},
       "figures": [
         {"id": "ikazuti.png", "position": {"x": 100, "y": 0}, "isHide": true}
       ],
       "dialog": {"speaker": "雷", "speech": "我在这里呢。背景也换了。你也过来呀。"},
       "effect": [
-        {"name": "fade", "wait": 1000, "attribute": {"isFadein": true, "duration": 2000, "target": "ikazuti.png"}}
+        {"name": "bgSwitch", "wait": 0, "attribute": {"method": "blur"}},
+        {"name": "fade", "wait": 800, "attribute": {"isFadein": true, "duration": 200, "target": "ikazuti.png"}}
       ],
       "branch": [
         {"text": "过去", "targetPart": "part1"},
@@ -56,7 +45,7 @@
   ],
   "part2": [
     { 
-      "bg": "bg01.jpg",
+      "bg": {"id": "bg01.jpg", "isEffect": false},
       "figures": [
           {"id": "inaduma.png", "position": {"x": 300, "y": 0}}
         ],

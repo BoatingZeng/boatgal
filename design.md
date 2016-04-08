@@ -32,7 +32,7 @@
   {
     "part0": [
       {
-        "bg": "",
+        "bg": {"id": "", "isEffect": false},
         "bgm": "",
         "figures": [{"id": "", "position": {"x": 0, "y": 0}}],
         "dialog": {"speaker": "", "speech": ""},
@@ -65,8 +65,8 @@
 ```
    {
      id {String}: 图片id
-     position {Object}: 表示图片位置。包含x {Num}, y {Num}属性。
-     isHide {Boolean}: 可选属性,如果true,则初始时该图片alpha设置为0
+     position {Object}: 表示图片最终位置。包含x {Num}, y {Num}属性。
+     isHide {Boolean}: 可选属性,如果true,则初始时该图片alpha设置为0,一般用于配合效果
    }
 ```
 
@@ -85,6 +85,14 @@
 {
   text {String}: 要显示的字符串
   targetPart {String}: 要跳转至的part
+}
+```
+
+7. `bg {Object}`: 
+```
+{
+  id {String}: 要使用的背景
+  isEffect {Boolean}: 是否使用效果,false的话,直接替换背景,否则由效果器控制
 }
 ```
 
