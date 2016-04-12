@@ -22,7 +22,7 @@
       ],
       "dialog": {"speaker": "雷", "speech": "我在这里呢。背景也换了。你也过来呀。"},
       "effect": [
-        {"name": "bgSwitch", "wait": 0, "attribute": {"method": "blur"}},
+        {"name": "bgSwitch", "wait": 0, "attribute": {"method": "fade"}},
         {"name": "fade", "wait": 800, "attribute": {"isFadein": true, "duration": 200, "target": "ikazuti.png"}}
       ],
       "branch": [
