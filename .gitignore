@@ -1,3 +1,5 @@
 
 *.bat
 demo
+node_modules
+/Gruntfile.js
